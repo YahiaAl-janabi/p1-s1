@@ -5,10 +5,7 @@ var doSubmit = validateForm();
 
 if(doSubmit == false){
 
-return false;}
-
-}
-
+return false;}}
 
 
 function validateForm(){
