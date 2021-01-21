@@ -1,24 +1,20 @@
-//form validation fuction
-document.getElementById("submit).onClick = function(){
+function validateForm() {
+  var nameFirst = document.getElementById("nameFirst");
+  var theValue = nameFirst.value;
 
-var doSubmit = validateForm();
+  if (theValue != "yahia") {
+    var messageHolder = document.getElementById("target");
+    messageHolder.style.color = "red";
+    messageHolder.innerHTML = "<h1> Change the text </h1>";
+    nameFirst.select;
 
-if(doSubmit == false){
-
-return false;}}
-
-
-function validateForm(){
-
-var nameFirst = document.getElementById("nameFirst");
-var theValue = nameFirst.value;
-
-if(theValue != "Yahia"){
-
-var messageHolder = document.getElementById("target");
-messageHolder.innerHTML = "<h1>Change the text<h1>";
-nameFirst.select;
-
-return false;}
-
+    return false;
+  }
 }
+document.getElementById("submit").onclick = function () {
+  var doSubmit = validateForm();
+
+  if (doSubmit == false) {
+    return false;
+  }
+};
